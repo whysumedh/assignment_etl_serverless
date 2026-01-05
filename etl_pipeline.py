@@ -1,8 +1,3 @@
-"""
-ETL Pipeline for Retail Pricing Data (May-2022.csv)
-Adapted from app.py structure but using pandas instead of PySpark for Cloud Function compatibility.
-"""
-
 import pandas as pd
 import numpy as np
 import json
@@ -13,7 +8,6 @@ from datetime import datetime
 
 
 def load_data(file_path: str) -> pd.DataFrame:
-    """Load CSV data into pandas DataFrame."""
     if not os.path.exists(file_path):
         raise FileNotFoundError(f"Data file not found: {file_path}")
     
@@ -23,7 +17,6 @@ def load_data(file_path: str) -> pd.DataFrame:
 
 
 def extract_size_from_sku(sku: str) -> str:
-    """Extract size from SKU pattern."""
     import re
     if pd.isna(sku) or not isinstance(sku, str):
         return None
@@ -46,31 +39,24 @@ def clean_transform(df: pd.DataFrame) -> pd.DataFrame:
     
     df_clean = df.copy()
     
-    # Extract size from SKU
     df_clean['Size'] = df_clean['Sku'].apply(extract_size_from_sku)
     
-    # Handle missing values
     df_clean['Weight'] = pd.to_numeric(df_clean['Weight'], errors='coerce').fillna(0)
     
-    # Ensure numeric columns are actually numeric
     platform_cols = [col for col in df_clean.columns if 'MRP' in col and col not in ['MRP Old', 'Final MRP Old']]
     for col in ['TP'] + platform_cols:
         if col in df_clean.columns:
             df_clean[col] = pd.to_numeric(df_clean[col], errors='coerce')
 
-    # Filter out rows where all platform prices are missing
     df_clean = df_clean[df_clean[platform_cols].notna().any(axis=1)]
     
-    # Remove invalid TP
     df_clean = df_clean[df_clean['TP'] > 0]
     
-    # Standardize text fields
     if 'Catalog' in df_clean.columns:
         df_clean['Catalog'] = df_clean['Catalog'].str.strip()
     if 'Category' in df_clean.columns:
         df_clean['Category'] = df_clean['Category'].str.strip()
     
-    # Calculate price metrics
     platform_prices = np.array([df_clean[col].values for col in platform_cols]).T
     
     df_clean['min_price'] = np.nanmin(platform_prices, axis=1)
@@ -78,7 +64,6 @@ def clean_transform(df: pd.DataFrame) -> pd.DataFrame:
     df_clean['avg_price'] = np.nanmean(platform_prices, axis=1)
     df_clean['price_range'] = df_clean['max_price'] - df_clean['min_price']
     
-    # Find cheapest platform
     cheapest_platforms = []
     for i, row in df_clean.iterrows():
         prices = {col: row[col] for col in platform_cols if pd.notna(row[col])}
@@ -92,7 +77,6 @@ def clean_transform(df: pd.DataFrame) -> pd.DataFrame:
     df_clean['cheapest_platform'] = cheapest_platforms
     df_clean['cheapest_price'] = df_clean['min_price']
     
-    # Remove duplicates
     df_clean = df_clean.drop_duplicates(subset=['Sku'], keep='first')
     
     final_count = len(df_clean)
@@ -102,11 +86,7 @@ def clean_transform(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def compute_kpis(df: pd.DataFrame) -> Dict[str, Any]:
-    """
-    Compute comprehensive KPIs for pricing analysis.
-    Returns dictionary of KPI DataFrames and statistics.
-    """
-    print("Computing KPIs...")
+
     
     platform_cols = [col for col in df.columns if 'MRP' in col and col not in ['MRP Old', 'Final MRP Old']]
     
@@ -198,7 +178,6 @@ def compute_kpis(df: pd.DataFrame) -> Dict[str, Any]:
 
 
 def save_outputs(kpis: Dict[str, Any], output_dir: str):
-    """Save KPI results to JSON and Parquet files."""
     os.makedirs(output_dir, exist_ok=True)
     
     # Save as JSON
@@ -225,7 +204,6 @@ def save_outputs(kpis: Dict[str, Any], output_dir: str):
 
 
 def main(input_path: str, output_dir: str):
-    """Main ETL pipeline function."""
     print("=" * 50)
     print("ETL Pipeline - Retail Pricing Data")
     print("=" * 50)
@@ -254,7 +232,6 @@ def main(input_path: str, output_dir: str):
 
 
 if __name__ == "__main__":
-    # Default paths
     script_dir = Path(__file__).parent
     project_root = script_dir.parent
     input_file = project_root / 'data' / 'May-2022.csv'
