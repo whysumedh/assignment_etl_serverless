@@ -9,7 +9,7 @@ A serverless REST API deployed on Google Cloud Functions) providing retail prici
 **Function Name:** `retail-etl-api`  
 **Function URL:** `https://retail-etl-api-yljjgc5pva-uc.a.run.app`  
 Used Google Cloud for Deployment
-Used Dataset : (Dataset)[https://wgcp-my.sharepoint.com/:x:/r/personal/ritish_jogi_blend360_com/_layouts/15/Doc.aspx?sourcedoc=%7BBCD48020-E3F6-4FA8-9722-1A904E731DB1%7D&file=May-2022.csv&action=default&mobileredirect=true]
+Used Dataset : [Dataset](https://wgcp-my.sharepoint.com/:x:/r/personal/ritish_jogi_blend360_com/_layouts/15/Doc.aspx?sourcedoc=%7BBCD48020-E3F6-4FA8-9722-1A904E731DB1%7D&file=May-2022.csv&action=default&mobileredirect=true)
 
 ### GCS Configuration
 
