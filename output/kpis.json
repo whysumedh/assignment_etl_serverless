@@ -1,0 +1,443 @@
+{
+  "overall_stats": {
+    "total_products": 1293,
+    "total_skus": 1293,
+    "total_styles": 247,
+    "total_catalogs": 9,
+    "total_categories": 5,
+    "price_statistics": {
+      "min_price": 199.0,
+      "max_price": 5997.0,
+      "avg_price": 2241.3247873163186,
+      "median_price": 2095.0,
+      "std_price": 701.4450521119986
+    }
+  },
+  "category_kpi": [
+    {
+      "Category": "Gown",
+      "min_price": 2795.0,
+      "max_price": 4295.0,
+      "avg_price": 3151.25,
+      "product_count": 32,
+      "unique_skus": 32,
+      "unique_styles": 6
+    },
+    {
+      "Category": "Kurta",
+      "min_price": 1195.0,
+      "max_price": 3995.0,
+      "avg_price": 1982.39,
+      "product_count": 802,
+      "unique_skus": 802,
+      "unique_styles": 133
+    },
+    {
+      "Category": "Kurta Set",
+      "min_price": 1795.0,
+      "max_price": 5997.0,
+      "avg_price": 2730.36,
+      "product_count": 342,
+      "unique_skus": 342,
+      "unique_styles": 58
+    },
+    {
+      "Category": "Nill",
+      "min_price": 199.0,
+      "max_price": 4899.0,
+      "avg_price": 2420.6,
+      "product_count": 72,
+      "unique_skus": 72,
+      "unique_styles": 41
+    },
+    {
+      "Category": "Tops",
+      "min_price": 1595.0,
+      "max_price": 1895.0,
+      "avg_price": 1728.33,
+      "product_count": 45,
+      "unique_skus": 45,
+      "unique_styles": 9
+    }
+  ],
+  "catalog_kpi": [
+    {
+      "Catalog": "Breeze-4",
+      "min_price": 2195.0,
+      "max_price": 2195.0,
+      "avg_price": 2195.0,
+      "product_count": 36,
+      "unique_skus": 36,
+      "unique_categories": 1
+    },
+    {
+      "Catalog": "Colors-7",
+      "min_price": 1595.0,
+      "max_price": 1595.0,
+      "avg_price": 1595.0,
+      "product_count": 43,
+      "unique_skus": 43,
+      "unique_categories": 1
+    },
+    {
+      "Catalog": "Colors-8",
+      "min_price": 1895.0,
+      "max_price": 1895.0,
+      "avg_price": 1895.0,
+      "product_count": 48,
+      "unique_skus": 48,
+      "unique_categories": 1
+    },
+    {
+      "Catalog": "Four Gems 2",
+      "min_price": 2795.0,
+      "max_price": 2795.0,
+      "avg_price": 2795.0,
+      "product_count": 24,
+      "unique_skus": 24,
+      "unique_categories": 1
+    },
+    {
+      "Catalog": "Mix",
+      "min_price": 1195.0,
+      "max_price": 5997.0,
+      "avg_price": 2149.41,
+      "product_count": 794,
+      "unique_skus": 794,
+      "unique_categories": 4
+    },
+    {
+      "Catalog": "Moments",
+      "min_price": 2295.0,
+      "max_price": 2295.0,
+      "avg_price": 2295.0,
+      "product_count": 36,
+      "unique_skus": 36,
+      "unique_categories": 1
+    },
+    {
+      "Catalog": "Nill",
+      "min_price": 199.0,
+      "max_price": 4899.0,
+      "avg_price": 2420.6,
+      "product_count": 72,
+      "unique_skus": 72,
+      "unique_categories": 1
+    },
+    {
+      "Catalog": "Rozana",
+      "min_price": 2495.0,
+      "max_price": 2495.0,
+      "avg_price": 2495.0,
+      "product_count": 48,
+      "unique_skus": 48,
+      "unique_categories": 1
+    },
+    {
+      "Catalog": "Surmaya",
+      "min_price": 1250.0,
+      "max_price": 5395.0,
+      "avg_price": 2539.69,
+      "product_count": 192,
+      "unique_skus": 192,
+      "unique_categories": 3
+    }
+  ],
+  "platform_stats": {
+    "ajio": {
+      "products_available": 1293,
+      "min_price": 199.0,
+      "max_price": 5997.0,
+      "avg_price": 2241.26407579273,
+      "median_price": 2095.0,
+      "coverage_pct": 100.0
+    },
+    "amazon": {
+      "products_available": 1293,
+      "min_price": 199.0,
+      "max_price": 5997.0,
+      "avg_price": 2247.789211136891,
+      "median_price": 2097.0,
+      "coverage_pct": 100.0
+    },
+    "amazon_fba": {
+      "products_available": 1293,
+      "min_price": 199.0,
+      "max_price": 5997.0,
+      "avg_price": 2247.789211136891,
+      "median_price": 2097.0,
+      "coverage_pct": 100.0
+    },
+    "flipkart": {
+      "products_available": 1293,
+      "min_price": 199.0,
+      "max_price": 5997.0,
+      "avg_price": 2243.12022428461,
+      "median_price": 2097.0,
+      "coverage_pct": 100.0
+    },
+    "limeroad": {
+      "products_available": 1293,
+      "min_price": 199.0,
+      "max_price": 5997.0,
+      "avg_price": 2242.974825986079,
+      "median_price": 2095.0,
+      "coverage_pct": 100.0
+    },
+    "myntra": {
+      "products_available": 1293,
+      "min_price": 199.0,
+      "max_price": 5997.0,
+      "avg_price": 2229.4450502706886,
+      "median_price": 2095.0,
+      "coverage_pct": 100.0
+    },
+    "paytm": {
+      "products_available": 1293,
+      "min_price": 199.0,
+      "max_price": 5997.0,
+      "avg_price": 2238.4891337973704,
+      "median_price": 2095.0,
+      "coverage_pct": 100.0
+    },
+    "snapdeal": {
+      "products_available": 1293,
+      "min_price": 199.0,
+      "max_price": 5997.0,
+      "avg_price": 2239.72656612529,
+      "median_price": 2095.0,
+      "coverage_pct": 100.0
+    }
+  },
+  "cheapest_platform_kpi": {
+    "ajio": 1179,
+    "amazon": 54,
+    "myntra": 42,
+    "flipkart": 6,
+    "snapdeal": 6,
+    "limeroad": 6
+  },
+  "price_variation_kpi": {
+    "products_with_variation": 266,
+    "products_uniform_price": 1027,
+    "avg_price_range": 38.69992266047951,
+    "max_price_range": 800.0
+  },
+  "top_variation_products": [
+    {
+      "Sku": "Os168_S",
+      "Style Id": "Os168",
+      "Catalog": "Mix",
+      "Category": "Kurta",
+      "min_price": 1695.0,
+      "max_price": 2495.0,
+      "price_range": 800.0,
+      "cheapest_platform": "ajio"
+    },
+    {
+      "Sku": "Os168_M",
+      "Style Id": "Os168",
+      "Catalog": "Mix",
+      "Category": "Kurta",
+      "min_price": 1695.0,
+      "max_price": 2495.0,
+      "price_range": 800.0,
+      "cheapest_platform": "ajio"
+    },
+    {
+      "Sku": "Os168_L",
+      "Style Id": "Os168",
+      "Catalog": "Mix",
+      "Category": "Kurta",
+      "min_price": 1695.0,
+      "max_price": 2495.0,
+      "price_range": 800.0,
+      "cheapest_platform": "ajio"
+    },
+    {
+      "Sku": "Os168_XL",
+      "Style Id": "Os168",
+      "Catalog": "Mix",
+      "Category": "Kurta",
+      "min_price": 1695.0,
+      "max_price": 2495.0,
+      "price_range": 800.0,
+      "cheapest_platform": "ajio"
+    },
+    {
+      "Sku": "Os168_2XL",
+      "Style Id": "Os168",
+      "Catalog": "Mix",
+      "Category": "Kurta",
+      "min_price": 1695.0,
+      "max_price": 2495.0,
+      "price_range": 800.0,
+      "cheapest_platform": "ajio"
+    },
+    {
+      "Sku": "Os168_3XL",
+      "Style Id": "Os168",
+      "Catalog": "Mix",
+      "Category": "Kurta",
+      "min_price": 1695.0,
+      "max_price": 2495.0,
+      "price_range": 800.0,
+      "cheapest_platform": "ajio"
+    },
+    {
+      "Sku": "Os4172_XS",
+      "Style Id": "Os4172",
+      "Catalog": "Nill",
+      "Category": "Nill",
+      "min_price": 1995.0,
+      "max_price": 2500.0,
+      "price_range": 505.0,
+      "cheapest_platform": "ajio"
+    },
+    {
+      "Sku": "Os291_S",
+      "Style Id": "Os291",
+      "Catalog": "Mix",
+      "Category": "Kurta",
+      "min_price": 1795.0,
+      "max_price": 2295.0,
+      "price_range": 500.0,
+      "cheapest_platform": "ajio"
+    },
+    {
+      "Sku": "Os291_M",
+      "Style Id": "Os291",
+      "Catalog": "Mix",
+      "Category": "Kurta",
+      "min_price": 1795.0,
+      "max_price": 2295.0,
+      "price_range": 500.0,
+      "cheapest_platform": "ajio"
+    },
+    {
+      "Sku": "Os291_L",
+      "Style Id": "Os291",
+      "Catalog": "Mix",
+      "Category": "Kurta",
+      "min_price": 1795.0,
+      "max_price": 2295.0,
+      "price_range": 500.0,
+      "cheapest_platform": "ajio"
+    },
+    {
+      "Sku": "Os291_XL",
+      "Style Id": "Os291",
+      "Catalog": "Mix",
+      "Category": "Kurta",
+      "min_price": 1795.0,
+      "max_price": 2295.0,
+      "price_range": 500.0,
+      "cheapest_platform": "ajio"
+    },
+    {
+      "Sku": "Os291_2XL",
+      "Style Id": "Os291",
+      "Catalog": "Mix",
+      "Category": "Kurta",
+      "min_price": 1795.0,
+      "max_price": 2295.0,
+      "price_range": 500.0,
+      "cheapest_platform": "ajio"
+    },
+    {
+      "Sku": "Os291_3XL",
+      "Style Id": "Os291",
+      "Catalog": "Mix",
+      "Category": "Kurta",
+      "min_price": 1795.0,
+      "max_price": 2295.0,
+      "price_range": 500.0,
+      "cheapest_platform": "ajio"
+    },
+    {
+      "Sku": "Os277_S",
+      "Style Id": "Os277",
+      "Catalog": "Mix",
+      "Category": "Kurta Set",
+      "min_price": 3095.0,
+      "max_price": 3397.0,
+      "price_range": 302.0,
+      "cheapest_platform": "myntra"
+    },
+    {
+      "Sku": "Os277_M",
+      "Style Id": "Os277",
+      "Catalog": "Mix",
+      "Category": "Kurta Set",
+      "min_price": 3095.0,
+      "max_price": 3397.0,
+      "price_range": 302.0,
+      "cheapest_platform": "myntra"
+    },
+    {
+      "Sku": "Os277_L",
+      "Style Id": "Os277",
+      "Catalog": "Mix",
+      "Category": "Kurta Set",
+      "min_price": 3095.0,
+      "max_price": 3397.0,
+      "price_range": 302.0,
+      "cheapest_platform": "myntra"
+    },
+    {
+      "Sku": "Os277_XL",
+      "Style Id": "Os277",
+      "Catalog": "Mix",
+      "Category": "Kurta Set",
+      "min_price": 3095.0,
+      "max_price": 3397.0,
+      "price_range": 302.0,
+      "cheapest_platform": "myntra"
+    },
+    {
+      "Sku": "Os277_2XL",
+      "Style Id": "Os277",
+      "Catalog": "Mix",
+      "Category": "Kurta Set",
+      "min_price": 3095.0,
+      "max_price": 3397.0,
+      "price_range": 302.0,
+      "cheapest_platform": "myntra"
+    },
+    {
+      "Sku": "Os277_3XL",
+      "Style Id": "Os277",
+      "Catalog": "Mix",
+      "Category": "Kurta Set",
+      "min_price": 3095.0,
+      "max_price": 3397.0,
+      "price_range": 302.0,
+      "cheapest_platform": "myntra"
+    },
+    {
+      "Sku": "Os262_S",
+      "Style Id": "Os262",
+      "Catalog": "Mix",
+      "Category": "Kurta",
+      "min_price": 1695.0,
+      "max_price": 1995.0,
+      "price_range": 300.0,
+      "cheapest_platform": "amazon"
+    }
+  ],
+  "size_kpi": [
+    {
+      "Size": "2XL",
+      "product_count": 206,
+      "avg_min_price": 2262.99,
+      "avg_max_price": 2301.35
+    },
+    {
+      "Size": "3XL",
+      "product_count": 199,
+      "avg_min_price": 2224.13,
+      "avg_max_price": 2264.35
+    }
+  ],
+  "timestamp": "2026-01-05T00:10:07.396938"
+}

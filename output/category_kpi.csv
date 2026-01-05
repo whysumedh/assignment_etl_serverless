@@ -1,0 +1,6 @@
+Category,min_price,max_price,avg_price,product_count,unique_skus,unique_styles
+Gown,2795.0,4295.0,3151.25,32,32,6
+Kurta,1195.0,3995.0,1982.39,802,802,133
+Kurta Set,1795.0,5997.0,2730.36,342,342,58
+Nill,199.0,4899.0,2420.6,72,72,41
+Tops,1595.0,1895.0,1728.33,45,45,9
