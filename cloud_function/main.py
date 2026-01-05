@@ -1,8 +1,3 @@
-"""
-Google Cloud Function for Retail ETL Analytics API.
-Reads aggregated data from GCS and returns KPI calculations.
-"""
-
 import json
 import os
 import logging
