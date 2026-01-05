@@ -1,7 +1,3 @@
-#!/bin/bash
-
-# Deployment script for Google Cloud Function
-# Make sure you have gcloud CLI installed and authenticated
 
 set -e
 
